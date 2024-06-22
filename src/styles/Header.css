@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header);
+}
+
+.title {
+    margin-left: 0.5rem;
+    font-size: 2rem;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expand-btn, .collapse-btn {
+    background-color: var(--header);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    border: none;
+}
+
+.collapse-btn {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
