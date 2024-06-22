@@ -1,9 +1,12 @@
-import Header from "./Header";
+import PreviewerHeader from "./PreviewerHeader";
+import '../styles/Previewer.css';
 
-function Previewer({ markdown }) {
-    return <div id="previewer">
-        <Header name="Previewer" />
-        <div dangerouslySetInnerHTML={{ __html: markdown }} />
+function Previewer({ markdown, isEditorMaximized, isPreviewerMaximized, onPreviewerExpandCollapseClick }) {
+    return <div id="previewer" className={isEditorMaximized ? "hidden" : ""}>
+        <PreviewerHeader
+            isPreviewerMaximized={isPreviewerMaximized}
+            onPreviewerExpandCollapseClick={onPreviewerExpandCollapseClick} />
+        <div id="preview" dangerouslySetInnerHTML={{ __html: markdown }} />
     </div>;
 }
 

@@ -5,8 +5,9 @@
 }
 
 .title {
-    margin-left: 0.5rem;
+    margin-left: 1rem;
     font-size: 2rem;
+    line-height: 1rem;
 }
 
 .button-container {
@@ -20,10 +21,6 @@
     font-size: 1.8rem;
     margin: 0 1rem;
     border: none;
-}
-
-.collapse-btn {
-    display: none;
 }
 
 button:hover {

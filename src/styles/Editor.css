@@ -1,9 +1,13 @@
+#editor-wrap {
+    height: 100%;
+}
+
 #editor {
-    margin-bottom: -5px;
     width: 100%;
     height: 85vh;
     background-color: var(--textarea);
     outline: none;
     resize: none;
     padding: 1rem;
+    border: none;
 }

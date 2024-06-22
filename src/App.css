@@ -1,8 +1,8 @@
 .App {
-  text-align: center;
   margin: 2rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -10,5 +10,9 @@
 #previewer {
   box-shadow: 0 0 1rem black;
   background-color: var(--textarea);
-  width: 48vw;
+  width: 47vw;
+}
+
+.hidden {
+  display: none;
 }

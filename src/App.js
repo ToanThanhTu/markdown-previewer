@@ -9,6 +9,8 @@ const defaultTextInput = "# Welcome to my React Markdown Previewer!\n\n## This i
 function App() {
   const [textInput, setTextInput] = useState(defaultTextInput);
   const [markdownText, setMarkdownText] = useState("");
+  const [isEditorMaximized, setIsEditorMaximized] = useState(false);
+  const [isPreviewerMaximized, setIsPreviewerMaximized] = useState(false);
 
   useEffect(() => {
     updateMarkdown();
@@ -23,8 +25,15 @@ function App() {
     <div className="App">
       <Editor
         textInput={textInput}
-        onTextInputChange={setTextInput} />
-      <Previewer markdown={markdownText} />
+        onTextInputChange={setTextInput}
+        isEditorMaximized={isEditorMaximized}
+        isPreviewerMaximized={isPreviewerMaximized}
+        onEditorExpandCollapseClick={() => setIsEditorMaximized(!isEditorMaximized)} />
+      <Previewer
+        markdown={markdownText}
+        isEditorMaximized={isEditorMaximized}
+        isPreviewerMaximized={isPreviewerMaximized}
+        onPreviewerExpandCollapseClick={() => setIsPreviewerMaximized(!isPreviewerMaximized)} />
     </div>
   );
 }
