@@ -1,21 +1,26 @@
+/* Styles the header
+    flex layout to put header title and button left and right ends */
 .header {
     display: flex;
     justify-content: space-between;
     background-color: var(--header);
 }
 
+/* Styles the title within the header */
 .title {
     margin-left: 1rem;
     font-size: 2rem;
     line-height: 1rem;
 }
 
+/* Styles the container for Maximize/Minimize buttons to align them properly */
 .button-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Styles for both expand (maximize) and collapse (minimize) buttons */
 .expand-btn, .collapse-btn {
     background-color: var(--header);
     font-size: 1.8rem;
@@ -23,6 +28,7 @@
     border: none;
 }
 
+/* Adds a pointer cursor on hover over buttons */
 button:hover {
     cursor: pointer;
 }

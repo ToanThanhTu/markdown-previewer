@@ -1,14 +1,17 @@
+/* Styles for the main previewer container */
 #previewer {
-    overflow-wrap: break-word;
-    height: 100%;
+    overflow-wrap: break-word; /* Ensures long words do not overflow the container */
+    height: 100%; /* Full height to match the parent's size */
 }
 
+/* Styles for the preview area within the previewer */
 #preview {
     padding: 0 1rem;
-    overflow: auto;
+    overflow: auto; /* Enables scrolling for overflow content */
     height: 85vh;
 }
 
+/* Styling for blockquotes within the preview */
 #preview blockquote {
     border-left: 3px solid #224b4b;
     color: #224b4b;
@@ -16,16 +19,19 @@
     margin-left: 25px;
 }
 
+/* Styling for inline code within paragraphs in the preview */
 #preview > p > code {
     padding: 3px;
 }
 
+/* General styling for code elements within the preview */
 #preview code {
     background: white;
     font-size: 1.3rem;
     font-weight: bold;
 }
 
+/* Styling for preformatted text blocks (pre) within the preview */
 #preview pre {
     display: block;
     overflow: auto;
@@ -34,14 +40,17 @@
     line-height: 1.2;
 }
 
+/* Styling for top-level headings (h1) within the preview */
 #preview h1 {
     border-bottom: 2px solid #224b4b;
 }
 
+/* Styling for second-level headings (h2) within the preview */
 #preview h2 {
     border-bottom: 1px solid #224b4b;
 }
 
+/* Styling for tables within the preview */
 #preview table {
     border-collapse: collapse;
 }

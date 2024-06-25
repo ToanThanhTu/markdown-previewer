@@ -1,38 +1,44 @@
+/* Define root CSS variables for theme colors */
 :root {
   --background: #A9FDAC;
   --textarea: #F1FFE7;
   --header: #44CF6C;
 }
 
+/* Universal box-sizing for consistency in element sizing */
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  /* border: 0.5px solid black; */
+  box-sizing: inherit; /* Inherits box-sizing from parent elements */
+  /* border: 0.5px solid black; */ /* Uncomment for debugging borders */
 }
 
+/* Ensure html and body elements take up full viewport height */
 html, body {
-  height: 100%;
-  /* overflow: hidden; */
+  height: 100%; 
+  /* overflow: hidden; */ /* Uncomment to hide scrollbars */
 }
 
+/* Base settings for html element */
 html {
-  min-width: 300px;
+  min-width: 300px; /* Minimum width to prevent layout breaking on small screens */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 62.5%;
+    sans-serif; /* System default font stack */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering in Webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Improve text rendering in Firefox on macOS */
+  font-size: 62.5%; /* Set base font-size to 10px for easier rem calculations */
 }
 
+/* Base settings for body element */
 body {
-  box-sizing: border-box;
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
   font-size: 1.6rem;
   background-color: var(--background);
 }
 
+/* Styling for <code> elements */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    monospace; /* Font stack for code elements */
 }

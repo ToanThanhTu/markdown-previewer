@@ -1,18 +1,20 @@
 .App {
-  margin: 2rem;
-  display: flex;
+  margin: 2rem; /* Adds margin around the App component */
+  display: flex; /* Uses flexbox layout to center contents */
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem; /* Adds space between each child */
 }
 
+/* Styling for the editor and previewer components */
 #editor-wrap,
 #previewer {
   box-shadow: 0 0 1rem black;
   background-color: var(--textarea);
-  width: 47vw;
+  width: 47vw; /* Sets the width to 47% of the viewport width */
 }
 
+/* Utility class to hide elements */
 .hidden {
   display: none;
 }

@@ -1,13 +1,15 @@
+/* Styling for the editor wrapper */
 #editor-wrap {
-    height: 100%;
+    height: 100%; /* Ensures the editor wrapper takes full height of its parent */
 }
 
+/* Styling for the text area itself */
 #editor {
     width: 100%;
     height: 85vh;
     background-color: var(--textarea);
-    outline: none;
-    resize: none;
+    outline: none; /* Removes the outline to avoid visual distraction */
+    resize: none; /* Disables resizing to maintain a consistent layout */
     padding: 1rem;
     border: none;
 }
