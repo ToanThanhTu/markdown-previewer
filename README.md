@@ -24,7 +24,8 @@ Before you begin, ensure you have installed the latest version of:
     1. [marked](https://github.com/markedjs/marked?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library) library: `npm install -g marked`
     1. [Font Awesome](https://docs.fontawesome.com/apis/javascript/get-started) library:
         1. Install the Font Awesome SVG Core package: `npm install @fortawesome/fontawesome-svg-core`
-        1. Install the icon content package: `npm install @fortawesome/free-solid-svg-icons`
+        1. Install the icon content package: `npm i --save @fortawesome/free-solid-svg-icons`
+        1. Install the React component: `npm i --save @fortawesome/react-fontawesome@latest`
 1. Start the application: `npm start`
 1. This will run the app in development mode. Open http://localhost:3000 to view it in your browser. The page will reload if you make edits.
 
