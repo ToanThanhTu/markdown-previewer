@@ -42,3 +42,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace; /* Font stack for code elements */
 }
+
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  line-height: 0.5;
+}

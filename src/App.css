@@ -1,9 +1,12 @@
 .App {
-  margin: 2rem; /* Adds margin around the App component */
-  display: flex; /* Uses flexbox layout to center contents */
+  margin: 2rem;
+  /* Adds margin around the App component */
+  display: flex;
+  /* Uses flexbox layout to center contents */
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Adds space between each child */
+  gap: 2rem;
+  /* Adds space between each child */
 }
 
 /* Styling for the editor and previewer components */
@@ -11,10 +14,26 @@
 #previewer {
   box-shadow: 0 0 1rem black;
   background-color: var(--textarea);
-  width: 47vw; /* Sets the width to 47% of the viewport width */
+  width: 47vw;
+  /* Sets the width to 47% of the viewport width */
 }
 
 /* Utility class to hide elements */
 .hidden {
   display: none;
+}
+
+@media (max-width: 768px) {
+
+  /* Media query for smaller screens */
+  .App {
+    flex-direction: column;
+    /* Stacks the components vertically */
+  }
+
+  #editor-wrap,
+  #previewer {
+    width: 90vw;
+    /* Sets the width to 90% of the viewport width */
+  }
 }
